@@ -1,6 +1,5 @@
 package cloud.autotests.tests;
 
-import cloud.autotests.helpers.DriverUtils;
 import com.codeborne.selenide.Condition;
 import io.qameta.allure.Description;
 import io.qameta.allure.Owner;
@@ -60,21 +59,6 @@ public class IBSTests extends TestBase {
             String actualTitle = title();
 
             assertThat(actualTitle).isEqualTo(expectedTitle);
-        });
-    }
-
-    @Test
-    @Description("IBS logs test")
-    @DisplayName("Page console log should not have errors")
-    void consoleShouldNotHaveErrorsTest() {
-        step("Open url 'https://ibs.ru/'", () ->
-                open("https://ibs.ru/"));
-
-        step("Console logs should not contain text 'SEVERE'", () -> {
-            String consoleLogs = DriverUtils.getConsoleLogs();
-            String errorText = "SEVERE";
-
-            assertThat(consoleLogs).doesNotContain(errorText);
         });
     }
 }
