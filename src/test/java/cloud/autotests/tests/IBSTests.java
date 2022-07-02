@@ -3,7 +3,11 @@ package cloud.autotests.tests;
 import cloud.autotests.helpers.DriverUtils;
 import com.codeborne.selenide.Condition;
 import io.qameta.allure.Description;
+import io.qameta.allure.Owner;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Selectors.byText;
@@ -14,7 +18,10 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public class IBSTests extends TestBase {
     @Test
-    @Description("Soon to be implemented by you (or QA.GURU engineers)")
+    @Tag("ibsTest")
+    @Owner("Maverik2047")
+    @Severity(SeverityLevel.NORMAL)
+    @Description("Check specified content on IBS web-site")
     @DisplayName("IBS-tests")
     void ibsTest() {
         step("Open url 'https://ibs.ru/'", () ->
