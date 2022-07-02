@@ -1,39 +1,43 @@
 package cloud.autotests.tests;
 
 import cloud.autotests.helpers.DriverUtils;
+import com.codeborne.selenide.Condition;
 import io.qameta.allure.Description;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import static com.codeborne.selenide.Selenide.open;
-import static com.codeborne.selenide.Selenide.title;
+import static com.codeborne.selenide.Selectors.byText;
+import static com.codeborne.selenide.Selenide.*;
 import static io.qameta.allure.Allure.step;
 import static org.assertj.core.api.Assertions.assertThat;
 
 
-public class GeneratedTests extends TestBase {
+public class IBSTests extends TestBase {
     @Test
     @Description("Soon to be implemented by you (or QA.GURU engineers)")
     @DisplayName("IBS-tests")
-    void generatedTest() {
-        step("Open https://ibs.ru/", () -> {
-            step("// todo: just add selenium action");
+    void ibsTest() {
+        step("Open url 'https://ibs.ru/'", () ->
+                open("https://ibs.ru/"));
+
+        step("click on Accept cookies button", () -> {
+            $(".cookie.cookie__show").$(byText("Принимаю условия")).click();
         });
 
         step("click on ENG button", () -> {
-            step("// todo: just add selenium action");
+            $(".header__lang.lang").$(byText("ENG")).click();
         });
 
         step("click on Technology Partners", () -> {
-            step("// todo: just add selenium action");
+            $(".aside-navigation__list").$(byText("Technology Partners")).click();
         });
 
         step("click on SHOW", () -> {
-            step("// todo: just add selenium action");
+            $("#ajax_load").click();
         });
 
         step("page should have modal ROBIN Partner", () -> {
-            step("// todo: just add selenium action");
+            $(".vendors-project-list.ajax_result").shouldHave(Condition.text("ROBIN"));
         });
     }
 
@@ -42,7 +46,7 @@ public class GeneratedTests extends TestBase {
     @DisplayName("Page title should have header text")
     void titleTest() {
         step("Open url 'https://ibs.ru/'", () ->
-            open("https://ibs.ru/"));
+                open("https://ibs.ru/"));
 
         step("Page title should have text 'IBS — ведущая российская IT-сервисная компания'", () -> {
             String expectedTitle = "IBS — ведущая российская IT-сервисная компания";
@@ -57,7 +61,7 @@ public class GeneratedTests extends TestBase {
     @DisplayName("Page console log should not have errors")
     void consoleShouldNotHaveErrorsTest() {
         step("Open url 'https://ibs.ru/'", () ->
-            open("https://ibs.ru/"));
+                open("https://ibs.ru/"));
 
         step("Console logs should not contain text 'SEVERE'", () -> {
             String consoleLogs = DriverUtils.getConsoleLogs();
