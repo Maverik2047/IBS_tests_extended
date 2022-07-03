@@ -26,7 +26,7 @@
 <a href="https://www.jenkins.io/"><img src="images/logo/Jenkins.svg" width="50" height="50"  alt="Jenkins"/></a>
 </p>
 
-##⚓: Реализованные проверки
+## ⚓: Реализованные проверки
 
 Тест 1
 - ✓ Открыть сайт ibs.ru 
