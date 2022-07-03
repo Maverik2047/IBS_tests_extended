@@ -71,9 +71,9 @@ test
 -Durl=${REMOTE_URL}
 ```
 
-# USAGE examples
+# Примеры использования
 
-### For run remote tests need fill remote.properties or to pass value:
+### Для запуска удаленных тестов необходимо заполнить remote.properties или передать значение:
 
 * browser (default chrome)
 * browserVersion (default 89.0)
@@ -84,17 +84,17 @@ test
 * threads (number of threads)
 
 
-Run tests with filled remote.properties:
+Запускайте тесты с заполненным remote.properties:
 ```bash
 gradle clean test
 ```
 
-Run tests with not filled remote.properties:
+Запускайте тесты с незаполненным remote.properties:
 ```bash
 gradle clean -DremoteDriverUrl=https://%s:%s@selenoid.autotests.cloud/wd/hub/ -DvideoStorage=https://selenoid.autotests.cloud/video/ -Dthreads=1 test
 ```
 
-Serve report:
+Выдать отчет:
 ```bash
 allure serve build/allure-results
 ```
