@@ -26,7 +26,7 @@ public class IBSTests extends TestBase {
         step("Open url 'https://ibs.ru/'", () ->
                 open("https://ibs.ru/"));
 
-        step("click on Accept cookies  button", () -> {
+        step("click on Accept cookies button", () -> {
             $(".cookie.cookie__show").$(byText("Принимаю условия")).click();
         });
 
