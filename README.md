@@ -111,7 +111,7 @@ allure serve build/allure-results
 
 ## 💹: Графики
 <p align="center">
-<img title="Allure Tests" src="images/screens/char.png">
+<img title="Allure Tests" src="images/screens/chart.png">
 </p>
 
 ## <img src="images/logo/Telegram.svg" width="25" height="25"  alt="Allure"/></a> Уведомление в Telegram при помощи бота
