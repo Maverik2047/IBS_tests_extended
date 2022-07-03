@@ -42,7 +42,7 @@
 
 ## <img src="images/logo/Jenkins.svg" width="25" height="25"  alt="Jenkins"/></a> Jenkins <a target="_blank" href="https://jenkins.autotests.cloud/job/IBS_test/"> job </a>
 <p align="center">
-<a href="https://jenkins.autotests.cloud/job/IBS_test/"><img src="images/screens/jenkins.png" alt="Jenkins"/></a>
+<a href="https://jenkins.autotests.cloud/job/IBS_test/"><img src="images/screens/jenkins.PNG" alt="Jenkins"/></a>
 </p>
 
 
@@ -101,7 +101,7 @@ allure serve build/allure-results
 
 ## ⛅: Основной отчет
 <p align="center">
-<img title="Allure Overview Dashboard" src="images/screens/report.png">
+<img title="Allure Overview Dashboard" src="images/screens/report.PNG">
 </p>
 C:\Users\maver\IBS-tests\images\screens\report.PNG
 
