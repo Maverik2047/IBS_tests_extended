@@ -103,6 +103,7 @@ allure serve build/allure-results
 <p align="center">
 <img title="Allure Overview Dashboard" src="images/screens/report.png">
 </p>
+C:\Users\maver\IBS-tests\images\screens\report.PNG
 
 ## 🧪: Тесты
 <p align="center">
@@ -111,7 +112,7 @@ allure serve build/allure-results
 
 ## 💹: Графики
 <p align="center">
-<img title="Allure Tests" src="images/screens/chart.png">
+<img title="Allure Tests" src="images/screens/chart.PNG">
 </p>
 
 ## <img src="images/logo/Telegram.svg" width="25" height="25"  alt="Allure"/></a> Уведомление в Telegram при помощи бота
