@@ -1,11 +1,7 @@
 package cloud.autotests.tests;
 
-import cloud.autotests.config.Project;
 import cloud.autotests.helpers.AllureAttachments;
-import cloud.autotests.helpers.DriverSettings;
-import cloud.autotests.helpers.DriverUtils;
 import com.codeborne.selenide.Configuration;
-import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.junit5.AllureJunit5;
 import io.qameta.allure.selenide.AllureSelenide;
@@ -15,18 +11,16 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
-import static cloud.autotests.helpers.DriverUtils.getSessionId;
-
 
 @ExtendWith({AllureJunit5.class})
-public class TestBase {
+public class TestBase extends AllureAttachments {
     @BeforeAll
     static void beforeAll() {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         Configuration.browserCapabilities = capabilities;
         capabilities.setCapability("enableVNC", true);
         capabilities.setCapability("enableVideo", true);
-        Configuration.baseUrl = "https://demoqa.com";
+        Configuration.baseUrl = "https://ibs.ru";
         Configuration.browserSize = "1800x900";
         Configuration.holdBrowserOpen = true;
         Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
@@ -39,16 +33,12 @@ public class TestBase {
 
     @AfterEach
     public void afterEach() {
-        String sessionId = getSessionId();
-        //AllureAttachments.addVideo("https://selenoid.autotests.cloud/video/" + getSessionId() + ".mp4");
-        AllureAttachments.addScreenshotAs("Last screenshot");
-        AllureAttachments.addPageSource();
-        AllureAttachments.addBrowserConsoleLogs();
 
-        Selenide.closeWebDriver();
+        screenshotAs("Last screenshot");
+        pageSource();
+        browserConsoleLogs();
+        addVideo();
 
-        if (Project.isVideoOn()) {
-            AllureAttachments.addVideo(sessionId);
-        }
+
     }
 }
