@@ -15,6 +15,8 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
+import static cloud.autotests.helpers.DriverUtils.getSessionId;
+
 
 @ExtendWith({AllureJunit5.class})
 public class TestBase {
@@ -37,11 +39,10 @@ public class TestBase {
 
     @AfterEach
     public void afterEach() {
-        String sessionId = DriverUtils.getSessionId();
-
+        String sessionId = getSessionId();
+        //AllureAttachments.addVideo("https://selenoid.autotests.cloud/video/" + getSessionId() + ".mp4");
         AllureAttachments.addScreenshotAs("Last screenshot");
         AllureAttachments.addPageSource();
-//        AllureAttachments.attachNetwork(); // todo
         AllureAttachments.addBrowserConsoleLogs();
 
         Selenide.closeWebDriver();
