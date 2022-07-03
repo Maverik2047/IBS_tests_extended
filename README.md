@@ -122,8 +122,7 @@ C:\Users\maver\IBS-tests\images\screens\report.PNG
 <img title="Allure Overview Dashboard" src="images/screens/notif.PNG" >
 </p>
 
-## <img src="images/logo/Selenoid.svg" width="25" height="25"  alt="Allure"/></a> Видео прохождения теста
-
+## <img src="images/logo/Selenoid.svg" width="25" height="25" alt="Jenkins"/></a> Видео <a target="_blank" href="https://selenoid.autotests.cloud/video/fe43b9f89a795109ff4959044e6650d7.mp4"> прохождения тестов </a>
 <p align="center">
-<img title="Selenoid Video" src="images/gif/video.mp4" width="250" height="153"  alt="video"> 
+<a href="https://selenoid.autotests.cloud/video/fe43b9f89a795109ff4959044e6650d7.mp4"></a>
 </p>
