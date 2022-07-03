@@ -107,7 +107,7 @@ C:\Users\maver\IBS-tests\images\screens\report.PNG
 
 ## 🧪: Тесты
 <p align="center">
-<img title="Allure Tests" src="images/screens/tests.png">
+<img title="Allure Tests" src="images/screens/tests.PNG">
 </p>
 
 ## 💹: Графики
@@ -118,11 +118,11 @@ C:\Users\maver\IBS-tests\images\screens\report.PNG
 ## <img src="images/logo/Telegram.svg" width="25" height="25"  alt="Allure"/></a> Уведомление в Telegram при помощи бота
 
 <p align="center">
-<img title="Allure Overview Dashboard" src="images/screens/notif.png" >
+<img title="Allure Overview Dashboard" src="images/screens/notif.PNG" >
 </p>
 
 ## <img src="images/logo/Selenoid.svg" width="25" height="25"  alt="Allure"/></a> Видео прохождения теста
 
 <p align="center">
-<img title="Selenoid Video" src="images/gif/Анимация.gif" width="250" height="153"  alt="video"> 
+<img title="Selenoid Video" src="images/gif/video.gif" width="250" height="153"  alt="video"> 
 </p>
