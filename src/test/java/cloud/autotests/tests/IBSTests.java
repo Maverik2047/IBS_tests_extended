@@ -78,5 +78,22 @@ public class IBSTests extends TestBase {
                     "127434, Москва, Дмитровское шоссе, 9Б, этаж 5, пом. XIII, ком. 6"));
         });
     }
+    @Test
+    @Description("IBS jobs check")
+    @DisplayName("Search for qa automation job")
+    void jobSearch(){
+        step("Open url 'https://ibs.ru/'", () ->
+                open("https://ibs.ru/"));
+        step("Type desired position into search",()->{
+            $("[name=q]").setValue("Инженер по автоматизации тестирования Java").pressEnter();
+        });
+        step("Open qa automation position",()->{
+            $(".search-result__title").click();
+        });
+        step("Check that only 1 position is found",()->{
+            $(".section-header-box__text").shouldHave(Condition.text("найден: 1 результат"));
+        });
+    }
+
 }
 
