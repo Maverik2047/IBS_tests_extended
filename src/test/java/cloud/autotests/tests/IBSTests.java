@@ -61,4 +61,22 @@ public class IBSTests extends TestBase {
             assertThat(actualTitle).isEqualTo(expectedTitle);
         });
     }
+    @Test
+    @Description("Contacts check")
+    @DisplayName("IBS Contacts page")
+    void contactsCheck() {
+        step("Open url 'https://ibs.ru/'", () ->
+                open("https://ibs.ru/"));
+        step("Click Contacts button",()->{
+            $(".header__btn").click();
+        });
+        step("Open main Office address",()->{
+            $(".view-address-block__title").click();
+        });
+        step("The main office should have full address",()->{
+            $(".view-address-block__content").shouldHave(Condition.text("Россия, " +
+                    "127434, Москва, Дмитровское шоссе, 9Б, этаж 5, пом. XIII, ком. 6"));
+        });
+    }
 }
+
