@@ -19,8 +19,8 @@ public class TestBase extends AllureAttachments {
         capabilities.setCapability("enableVideo", true);
         Configuration.baseUrl = "https://ibs.ru";
         Configuration.browserSize = "1800x900";
-        Configuration.holdBrowserOpen = true;
-        //Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
+        //Configuration.holdBrowserOpen = true;
+        Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
     }
 
     @BeforeEach

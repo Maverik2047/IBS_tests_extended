@@ -64,7 +64,7 @@
 - ✓ Открыть сайт ibs.ru
 - ✓ Кликнуть на раздел "Меню"
 - ✓ Перейти в раздел IT-инфраструктура
-- ✓ Проверить что на странице содержится статья про "Промышленный интернет вещей"
+- ✓ Проверить что на странице содержиться статья про "Промышленный интернет вещей"
 - ✓ Перейти в данную статью
 - ✓ Проверить что на странице содержится форма "Запросить контакты или подробности"
 
@@ -137,7 +137,7 @@ C:\Users\maver\IBS-tests\images\screens\report.PNG
 <p align="center">
 <img title="Allure Tests" src="images/screens/tests.PNG">
 </p>
-
+https://selenoid.autotests.cloud/video/1c3aeafdd0e50cdb8a04321ea7b3af5d.mp4
 ## 💹: Графики
 <p align="center">
 <img title="Allure Tests" src="images/screens/chart.PNG">
@@ -150,11 +150,10 @@ C:\Users\maver\IBS-tests\images\screens\report.PNG
 </p>
 
 ## ⬇️: Примеры запуска тестов в Selenoid
-## <img src="images/logo/Selenoid.svg" width="25" height="25" alt="Jenkins"/></a> Видео <a target="_blank" href="https://selenoid.autotests.cloud/video/fe43b9f89a795109ff4959044e6650d7.mp4"> прохождения тестов </a>
+## <img src="images/logo/Selenoid.svg" width="25" height="25" alt="Jenkins"/></a> Видео <a target="_blank" href="https://selenoid.autotests.cloud/video/fe43b9f89a795109ff4959044e6650d7.mp4">прохождения тестов </a>
 <p align="center">
 <a href="https://selenoid.autotests.cloud/video/fe43b9f89a795109ff4959044e6650d7.mp4"></a>
 </p>
 <video src="https://selenoid.autotests.cloud/video/1c3aeafdd0e50cdb8a04321ea7b3af5d.mp4"
-controls="controls" style="max-width: 730px;" poster="https://github.com/grad0ff/Itoolabs/blob/master/external/technologies/Selenoid.svg">
-
+controls="controls" style="max-width: 730px;" poster="https://github.com/Maverik2047/IBS_tests_extended/blob/master/images/logo/Selenide.svg">
 </video>
