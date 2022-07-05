@@ -61,39 +61,68 @@ public class IBSTests extends TestBase {
             assertThat(actualTitle).isEqualTo(expectedTitle);
         });
     }
+
     @Test
     @Description("Contacts check")
     @DisplayName("IBS Contacts page")
     void contactsCheck() {
         step("Open url 'https://ibs.ru/'", () ->
                 open("https://ibs.ru/"));
-        step("Click Contacts button",()->{
+        step("Click Contacts button", () -> {
             $(".header__btn").click();
         });
-        step("Open main Office address",()->{
+        step("Open main Office address", () -> {
             $(".view-address-block__title").click();
         });
-        step("The main office should have full address",()->{
+        step("The main office should have full address", () -> {
             $(".view-address-block__content").shouldHave(Condition.text("Россия, " +
                     "127434, Москва, Дмитровское шоссе, 9Б, этаж 5, пом. XIII, ком. 6"));
         });
     }
+
     @Test
     @Description("IBS jobs check")
     @DisplayName("Search for qa automation job")
-    void jobSearch(){
+    void jobSearch() {
         step("Open url 'https://ibs.ru/'", () ->
                 open("https://ibs.ru/"));
-        step("Type desired position into search",()->{
+        step("Type desired position into search", () -> {
             $("[name=q]").setValue("Инженер по автоматизации тестирования Java").pressEnter();
         });
-        step("Open qa automation position",()->{
+        step("Open qa automation position", () -> {
             $(".search-result__title").click();
         });
-        step("Check that only 1 position is found",()->{
+        step("Check that only 1 position is found", () -> {
             $(".section-header-box__text").shouldHave(Condition.text("найден: 1 результат"));
         });
     }
 
-}
+    @Test
+    @Description("IBS check article about the internet of things")
+    @DisplayName("Search for the article")
+    void articleSearch() {
+        step("Open url 'https://ibs.ru/'", () ->
+                open("https://ibs.ru/"));
+        step("click menu button", () -> {
+            $(".btn-menu__ico").click();
+        });
+        step("click on it-infrastructure block", () -> {
+            $(".menu-list").$(byText("IT-инфраструктура")).click();
+        });
+        step("check that the page contains the needed article", () -> {
+            $(".products-list__col").shouldHave(Condition.text("Промышленный интернет вещей"));
+        });
+        step("click on Accept cookies button", () -> {
+            $(".cookie.cookie__show").$(byText("Принимаю условия")).click();
+        });
+        step("click on the internet of things article", () -> {
+            $(".services").$(byText("Промышленный интернет вещей")).click();
+        });
 
+        step("check that the page contains ask for details form", () -> {
+            $(".form-bottom__title").shouldHave(Condition.text("Запросить контакты или подробности"));
+        });
+        $(byText("Запросить контакты или подробности")).scrollTo();
+    }
+
+}
