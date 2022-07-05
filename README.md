@@ -154,6 +154,6 @@ https://selenoid.autotests.cloud/video/1c3aeafdd0e50cdb8a04321ea7b3af5d.mp4
 <p align="center">
 <a href="https://selenoid.autotests.cloud/video/fe43b9f89a795109ff4959044e6650d7.mp4"></a>
 </p>
-<video src="https://selenoid.autotests.cloud/video/1c3aeafdd0e50cdb8a04321ea7b3af5d.mp4"
+<video src="https://github.com/Maverik2047/IBS-tests/blob/master/images/gif/video.mp4"
 controls="controls" style="max-width: 730px;" poster="https://github.com/Maverik2047/IBS_tests_extended/blob/master/images/logo/Selenide.svg">
 </video>
