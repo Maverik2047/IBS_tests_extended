@@ -154,3 +154,7 @@ C:\Users\maver\IBS-tests\images\screens\report.PNG
 <p align="center">
 <a href="https://selenoid.autotests.cloud/video/fe43b9f89a795109ff4959044e6650d7.mp4"></a>
 </p>
+<video src="https://selenoid.autotests.cloud/video/1c3aeafdd0e50cdb8a04321ea7b3af5d.mp4"
+controls="controls" style="max-width: 730px;" poster="https://github.com/grad0ff/Itoolabs/blob/master/external/technologies/Selenoid.svg">
+
+</video>
