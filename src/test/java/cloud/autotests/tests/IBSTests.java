@@ -22,13 +22,15 @@ public class IBSTests extends TestBase {
     @Severity(SeverityLevel.NORMAL)
     @Description("Check specified content on IBS web-site")
     @DisplayName("IBS-tests")
-    void ibsTest() {
+    void test01() {
         step("Open url 'https://ibs.ru/'", () ->
                 open("https://ibs.ru/"));
         step("click on ENG button", () -> {
             $(".header__lang.lang").$(byText("ENG")).click();
         });
-
+        step("click on Accept cookies button", () -> {
+            $(".cookie.cookie__show").$(byText("Принимаю условия")).click();
+        });
         step("click on Technology Partners", () -> {
             $(".aside-navigation__list").$(byText("Technology Partners")).click();
         });
@@ -46,7 +48,7 @@ public class IBSTests extends TestBase {
     @Severity(SeverityLevel.CRITICAL)
     @Description("IBS test")
     @DisplayName("Page title should have header text")
-    void titleTest() {
+    void test02() {
         step("Open url 'https://ibs.ru/'", () ->
                 open("https://ibs.ru/"));
 
@@ -62,7 +64,7 @@ public class IBSTests extends TestBase {
     @Severity(SeverityLevel.CRITICAL)
     @Description("Contacts check")
     @DisplayName("IBS Contacts page")
-    void contactsCheck() {
+    void test03() {
         step("Open url 'https://ibs.ru/'", () ->
                 open("https://ibs.ru/"));
         step("Click Contacts button", () -> {
@@ -81,7 +83,7 @@ public class IBSTests extends TestBase {
     @Severity(SeverityLevel.MINOR)
     @Description("IBS jobs check")
     @DisplayName("Search for qa automation job")
-    void jobSearch() {
+    void test04() {
         step("Open url 'https://ibs.ru/'", () ->
                 open("https://ibs.ru/"));
         step("Type desired position into search", () -> {
@@ -99,7 +101,7 @@ public class IBSTests extends TestBase {
     @Severity(SeverityLevel.TRIVIAL)
     @Description("IBS check article about the internet of things")
     @DisplayName("Search for the article")
-    void articleSearch() {
+    void test05() {
         step("Open url 'https://ibs.ru/'", () ->
                 open("https://ibs.ru/"));
         step("click menu button", () -> {
@@ -111,13 +113,9 @@ public class IBSTests extends TestBase {
         step("check that the page contains the needed article", () -> {
             $(".products-list__col").shouldHave(Condition.text("Промышленный интернет вещей"));
         });
-        step("click on Accept cookies button", () -> {
-            $(".cookie.cookie__show").$(byText("Принимаю условия")).click();
-        });
         step("click on the internet of things article", () -> {
             $(".services").$(byText("Промышленный интернет вещей")).click();
         });
-
         step("check that the page contains ask for details form", () -> {
             $(".form-bottom__title").shouldHave(Condition.text("Запросить контакты или подробности"));
         });

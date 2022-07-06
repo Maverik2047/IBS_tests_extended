@@ -133,7 +133,7 @@ allure serve build/allure-results
 </p>
 C:\Users\maver\IBS-tests\images\screens\report.PNG
 
-## 🧪: Тесты
+## 🧪: Тесты (последовательное выполнение)
 <p align="center">
 <img title="Allure Tests" src="images/screens/suites.PNG">
 </p>
