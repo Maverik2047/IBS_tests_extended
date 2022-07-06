@@ -135,7 +135,7 @@ C:\Users\maver\IBS-tests\images\screens\report.PNG
 
 ## 🧪: Тесты (последовательное выполнение)
 <p align="center">
-<img title="Allure Tests" src="images/screens/suites.PNG">
+<img title="Allure Tests" src="images/screens/tests.PNG">
 </p>
 
 ## 💹: Графики
