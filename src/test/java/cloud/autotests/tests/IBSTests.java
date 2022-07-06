@@ -21,7 +21,7 @@ public class IBSTests extends TestBase {
     @Owner("Maverik2047")
     @Severity(SeverityLevel.NORMAL)
     @Description("Check specified content on IBS web-site")
-    @DisplayName("IBS-tests")
+    @DisplayName("IBS content test")
     void test01() {
         step("Open url 'https://ibs.ru/'", () ->
                 open("https://ibs.ru/"));
@@ -47,7 +47,7 @@ public class IBSTests extends TestBase {
     @Test
     @Severity(SeverityLevel.CRITICAL)
     @Description("IBS test")
-    @DisplayName("Page title should have header text")
+    @DisplayName("Main page title should have header text")
     void test02() {
         step("Open url 'https://ibs.ru/'", () ->
                 open("https://ibs.ru/"));
@@ -63,7 +63,7 @@ public class IBSTests extends TestBase {
     @Test
     @Severity(SeverityLevel.CRITICAL)
     @Description("Contacts check")
-    @DisplayName("IBS Contacts page")
+    @DisplayName("Open Contacts page")
     void test03() {
         step("Open url 'https://ibs.ru/'", () ->
                 open("https://ibs.ru/"));
