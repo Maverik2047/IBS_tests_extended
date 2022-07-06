@@ -43,6 +43,7 @@ public class IBSTests extends TestBase {
     }
 
     @Test
+    @Severity(SeverityLevel.CRITICAL)
     @Description("IBS test")
     @DisplayName("Page title should have header text")
     void titleTest() {
@@ -58,6 +59,7 @@ public class IBSTests extends TestBase {
     }
 
     @Test
+    @Severity(SeverityLevel.CRITICAL)
     @Description("Contacts check")
     @DisplayName("IBS Contacts page")
     void contactsCheck() {
@@ -76,6 +78,7 @@ public class IBSTests extends TestBase {
     }
 
     @Test
+    @Severity(SeverityLevel.MINOR)
     @Description("IBS jobs check")
     @DisplayName("Search for qa automation job")
     void jobSearch() {
@@ -93,6 +96,7 @@ public class IBSTests extends TestBase {
     }
 
     @Test
+    @Severity(SeverityLevel.TRIVIAL)
     @Description("IBS check article about the internet of things")
     @DisplayName("Search for the article")
     void articleSearch() {
