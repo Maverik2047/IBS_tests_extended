@@ -25,11 +25,6 @@ public class IBSTests extends TestBase {
     void ibsTest() {
         step("Open url 'https://ibs.ru/'", () ->
                 open("https://ibs.ru/"));
-
-        step("click on Accept cookies button", () -> {
-            $(".cookie.cookie__show").$(byText("Принимаю условия")).click();
-        });
-
         step("click on ENG button", () -> {
             $(".header__lang.lang").$(byText("ENG")).click();
         });
