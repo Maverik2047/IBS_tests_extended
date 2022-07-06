@@ -70,7 +70,7 @@
 
 ## <img src="images/logo/Jenkins.svg" width="25" height="25"  alt="Jenkins"/></a> Jenkins <a target="_blank" href="https://jenkins.autotests.cloud/job/IBS_test/"> job </a>
 <p align="center">
-<a href="https://jenkins.autotests.cloud/job/IBS_test/"><img src="images/screens/jenkins.PNG" alt="Jenkins"/></a>
+<a href="https://jenkins.autotests.cloud/job/IBS_test/"><img src="images/screens/main.PNG" alt="Jenkins"/></a>
 </p>
 
 
@@ -140,13 +140,13 @@ C:\Users\maver\IBS-tests\images\screens\report.PNG
 
 ## 💹: Графики
 <p align="center">
-<img title="Allure Tests" src="images/screens/chart.PNG">
+<img title="Allure Tests" src="images/screens/graph.PNG">
 </p>
 
 ## <img src="images/logo/Telegram.svg" width="25" height="25"  alt="Allure"/></a> Уведомление в Telegram при помощи бота
 
 <p align="center">
-<img title="Allure Overview Dashboard" src="images/screens/notif.PNG" >
+<img title="Allure Overview Dashboard" src="images/screens/teleg.PNG" >
 </p>
 
 ## ⬇️: Примеры запуска тестов в Selenoid
