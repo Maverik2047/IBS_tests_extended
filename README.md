@@ -75,12 +75,10 @@
 
 
 ## 🧙: Параметры сборки в Jenkins:
-
-- Browser (браузер, по умолчанию chrome)
-- Version (версия браузера, по умолчанию 91.0)
-- Browser_size (размер окна браузера, по умолчанию 1920x1080)
-
-
+-Dbrowser (браузер, по умолчанию chrome)
+-DbrowserVersion (версия браузера, по умолчанию 99.)
+-DbrowserSize (размер окна браузера, по умолчанию 1920x1080)
+ REMOTE_URL (Selenoid url, по умолчанию selenoid.autotests.cloud/wd/hub)
 
 ## 🏗️: Запуск тестов из терминала
 Локальный запуск:
@@ -92,10 +90,10 @@ gradle clean test
 ```
 clean
 test
--Dbrowser=${BROWSER}
--Dversion=${VERSION}
--Dsize=${BROWSER_SIZE}
--Durl=${REMOTE_URL}
+-Dbrowser=${Browser}
+-DbrowserVersion=${Browser_versiom}
+-DbrowserSize=${Browser_size}
+
 ```
 
 # Примеры использования
