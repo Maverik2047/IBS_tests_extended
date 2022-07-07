@@ -20,6 +20,9 @@ public class TestBase extends AllureAttachments {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         Configuration.browserCapabilities = capabilities;
         Configuration.baseUrl = config.baseUrl();
+        Configuration.browser = System.getProperty("browser", "chrome");
+        Configuration.browserVersion = System.getProperty("version", "100");
+        Configuration.browserSize = System.getProperty("browserSize", "1920x1080");
         capabilities.setCapability("enableVNC", true);
         capabilities.setCapability("enableVideo", true);
 
