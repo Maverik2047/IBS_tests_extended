@@ -94,7 +94,7 @@ gradle clean test
 clean
 test
 -Dbrowser=${Browser}
--DbrowserVersion=${Browser_versiom}
+-DbrowserVersion=${Browser_version}
 -DbrowserSize=${Browser_size}
 
 ```
