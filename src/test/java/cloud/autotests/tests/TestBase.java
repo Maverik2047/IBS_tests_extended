@@ -25,8 +25,6 @@ public class TestBase extends AllureAttachments {
         Configuration.browserSize = System.getProperty("browserSize", "1920x1080");
         capabilities.setCapability("enableVNC", true);
         capabilities.setCapability("enableVideo", true);
-
-        Configuration.browserSize = "1800x900";
         Configuration.holdBrowserOpen = true;
 
         String remoteDriverUrl = System.getProperty("remoteDriverUrl", "selenoid.autotests.cloud/wd/hub");
